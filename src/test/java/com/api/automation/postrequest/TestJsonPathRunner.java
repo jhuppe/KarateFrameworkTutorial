@@ -3,11 +3,11 @@ package com.api.automation.postrequest;
 import com.intuit.karate.junit5.Karate;
 import com.intuit.karate.junit5.Karate.Test;
 
-public class TestPostRunner {
+public class TestJsonPathRunner {
 	
 	@Test
 	public Karate runTest() {
 		
-		return Karate.run("createJobEntry", "schemaValidation").relativeTo(getClass());
+		return Karate.run("jsonPathExpression").relativeTo(getClass());
 	}
 }
